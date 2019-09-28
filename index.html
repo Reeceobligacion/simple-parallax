@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Simple Parallax Example</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.0.2/dist/simpleParallax.min.js"></script>
+</head>
+<body>
+  <div class="web-container test4">
+    <div class="section is-medium test3">
+      <div class="columns">
+        <div class="column image-cont test">
+          <div class="tcont test">
+            <img class="ione" src="images/arch1.jpg" alt="">
+          </div>
+          <h2 class="num-texts num-text-left">01</h2>
+        </div>
+        <div class="message-text column has-text-centered test1">
+          <h2>Interior Design</h2>
+          <p class="is-vertical-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel voluptatibus facere placeat accusantium quis quia consequuntur ipsa rerum in, ut obcaecati voluptate vitae quaerat excepturi saepe facilis reprehenderit ipsam sit omnis. Culpa id accusantium porro dolores aut! Laudantium, architecto laboriosam!</p>
+        </div>
+      </div>
+    </div>
+    <div class="section is-medium test3">
+        <div class="sec-cont-r columns">
+          <div class="message-col message-text column has-text-centered test1">
+              <h2>Commercial Design</h2>
+              <p class="is-vertical-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel voluptatibus facere placeat accusantium quis quia consequuntur ipsa rerum in, ut obcaecati voluptate vitae quaerat excepturi saepe facilis reprehenderit ipsam sit omnis. Culpa id accusantium porro dolores aut! Laudantium, architecto laboriosam!</p>
+          </div>
+          <div class="image-col column image-cont test">
+            <div class="tcont is-pulled-right test">
+              <img class="itwo" src="images/arch2.jpg" alt="">
+            </div>
+            <h2 class="num-texts num-text-right">02</h2>
+          </div>
+        </div>
+      </div>
+      <div class="section is-medium test3">
+          <div class="columns">
+            <div class="column image-cont test">
+              <div class="tcont test">
+                <img class="ione" src="images/arch3.jpg" alt="">
+              </div>
+              <h2 class="num-texts num-text-left">03</h2>
+            </div>
+            <div class="message-text column has-text-centered test1">
+                <h2>Backyard Design</h2>
+                <p class="is-vertical-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel voluptatibus facere placeat accusantium quis quia consequuntur ipsa rerum in, ut obcaecati voluptate vitae quaerat excepturi saepe facilis reprehenderit ipsam sit omnis. Culpa id accusantium porro dolores aut! Laudantium, architecto laboriosam!</p>
+            </div>
+          </div>
+        </div>
+        <div class="section is-medium test3">
+            <div class="sec-cont-r columns">
+                <div class="message-col message-text column has-text-centered test1">
+                    <h2>Garage Design</h2>
+                    <p class="is-vertical-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel voluptatibus facere placeat accusantium quis quia consequuntur ipsa rerum in, ut obcaecati voluptate vitae quaerat excepturi saepe facilis reprehenderit ipsam sit omnis. Culpa id accusantium porro dolores aut! Laudantium, architecto laboriosam!</p>
+                </div>
+              <div class="image-col column image-cont test">
+                <div class="tcont is-pulled-right test">
+                  <img class="itwo" src="images/arch4.jpg" alt="">
+                </div>
+                <h2 class="num-texts num-text-right">04</h2>
+              </div>
+            </div>
+          </div>
+  </div>
+  <script type="text/javascript">
+    var image = document.getElementsByClassName('ione');
+    new simpleParallax(image, {
+      scale: 1.6,
+      orientation: 'left',
+    });
+
+    var image = document.getElementsByClassName('itwo');
+    new simpleParallax(image, {
+      scale: 1.6,
+      orientation: 'right',
+    });
+  </script>
+</body>
+</html>

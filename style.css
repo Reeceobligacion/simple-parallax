@@ -1,0 +1,113 @@
+/* ====================
+Used for layout testing
+==================== */
+
+/* .test {
+  border: 5px solid blue;
+}
+
+.test1 {
+  border: 5px solid red;
+}
+
+.test3 {
+  border: 5px solid purple;
+}
+
+.test4 {
+  border: 5px solid green;
+} */
+
+/* ====================
+General Styles
+==================== */
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  background: url(images/background.png) no-repeat 50% 50%;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.web-container {
+  width: 80%;
+}
+
+/* ====================
+Section Styles
+==================== */
+
+.num-texts {
+  font-size: 15rem;
+  color: white;
+  position: absolute;
+  top: 300px;
+}
+
+.num-text-left {
+  left: 5%;
+}
+
+.num-text-right {
+  right: 5%;
+}
+
+.image-cont {
+  position: relative;
+}
+
+.tcont {
+  position: relative;
+  overflow: hidden;
+  height: 500px;
+  width: 500px;
+}
+
+.tcont img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+.message-text {
+  color: white;
+}
+
+.message-text h2 {
+  margin-top: 10%;
+}
+
+.message-text p {
+  margin-top: 5%;
+}
+
+/* ====================
+Media Queries
+==================== */
+
+@media (max-width: 770px) {
+  .sec-cont-r {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .message-col {
+    order: 2;
+  }
+  
+  .image-col {
+    order: 1;
+  }
+
+  .message-text h2 {
+    margin-top: 20%;
+  }
+}
