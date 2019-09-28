@@ -1,1 +1,1 @@
-Simple parallax on scroll using simplePARALLAX js library
+Simple scroll parallax using simplePARALLAX js library
